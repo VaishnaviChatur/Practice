@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: plum;
+}
+
+.text-heading {
+    padding: 4px;
+    color: white;
+    background-color: rgb(79, 3, 79);
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 4px 4px 8px 8px white;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center-container {
+    height: 500px;
+    width: 50vw;
+    border: 0.5px solid black;
+    box-shadow: 4px 4px 8px 8px white;
+    ;
+}
+
+.app-heading {
+    padding: 4px;
+    color: black;
+    /* text-align: center; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    text-align: center;
+}

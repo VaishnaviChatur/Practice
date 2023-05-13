@@ -1,0 +1,42 @@
+.add-btn {
+    width: 60px;
+    height: 40px;
+    border-radius: 20%;
+    border: none;
+    background-color: rgb(74, 1, 74);
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(88, 72, 72, 0.3);
+    transition: 0.3s;
+}
+
+.add-btn:active {
+    box-shadow: none;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.input-box-todo {
+    margin-left: 10px;
+    width: 70%;
+    height: 40px;
+    border-radius: 14px;
+    border: 1px solid black;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.3);
+    outline: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
