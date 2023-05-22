@@ -10,9 +10,11 @@ export default function Main() {
     let addList = (inputText)=>{
       if(inputText!==''){
         setListTodo([...listTodo,inputText]);
-        setCount(count+1)
+        // setCount(count+1)
+        countSetadd()
     }
   
+    //strik through hone pe buttton 
         
     }
     function countSetmin(){
@@ -21,7 +23,7 @@ export default function Main() {
     }
 
     function countSetadd(){
-      if(count>0)
+     
       setCount(count+1)
     }
     const deleteListItem = (key)=>{
@@ -36,16 +38,15 @@ export default function Main() {
     return (
       <> <h1 className='text-heading'>To Do List</h1>
       <div className="main-container">
-      {/* //({listTodo.length}) */}
+   
         <div className="center-container">
         <h1 className="app-heading">Pending List ({count}) </h1>
-         {/* <PendingTasks count={pendingtasks}/> */}
+        
           <hr></hr>
           {listTodo.map((listItem,i)=>{
             return (
               <>
-            {/* {css? <p style={{textDecoration:'line-through'}}>{listItem}</p>: <p>{listItem}</p> } */}
-              <Todolist key={i} index={i} item={listItem} deleteItem={deleteListItem}  countcssadd={countSetadd} countcssmin={countSetmin} primary={false}/>
+             <Todolist key={i} index={i} item={listItem} deleteItem={deleteListItem}  countcssadd={countSetadd} countcssmin={countSetmin} primary={false}/>
           </>
               )
           })}

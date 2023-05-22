@@ -17,20 +17,16 @@ function cssChaanges(){
     props.countcssadd()
   }
   
-  //vai used if else logic here
+  
 }
     return (
       <li className="list-item">
         
         {css? <p style={{textDecoration:'line-through'}}>{props.item}</p>: <p>{props.item}</p> }
-        {/* {props.item} */}
+        
           <span className='icons'>
           <i class="fas fa-check-circle" onClick={cssChaanges}></i>
-          <i class="fa-solid fa-trash-can" 
-          onClick={e=>{
-              props.deleteItem(props.index)
-          }}
-          ></i>
+         <i class="fa-solid fa-trash-can" onClick={e=>{props.deleteItem(props.index)}}></i> 
           
           </span>
       </li>
